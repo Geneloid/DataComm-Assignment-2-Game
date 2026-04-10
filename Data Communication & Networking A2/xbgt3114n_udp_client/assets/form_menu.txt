@@ -1,0 +1,243 @@
+Renderer.1 {
+    BackgroundColor = transparent;
+    BorderColor = #3C3C3C;
+    Borders = (0, 0, 0, 0);
+    TextColor = #3C3C3C;
+    TextureBackground = None;
+
+    Scrollbar {
+        ArrowBackgroundColor = #F5F5F5;
+        ArrowBackgroundColorHover = white;
+        ArrowColor = #3C3C3C;
+        ArrowColorHover = black;
+        TextureArrowDown = None;
+        TextureArrowDownHover = None;
+        TextureArrowUp = None;
+        TextureArrowUpHover = None;
+        TextureThumb = None;
+        TextureThumbHover = None;
+        TextureTrack = None;
+        TextureTrackHover = None;
+        ThumbColor = #DCDCDC;
+        ThumbColorHover = #E6E6E6;
+        TrackColor = #F5F5F5;
+    }
+}
+
+Renderer.2 {
+    BackgroundColor = #F5F5F5;
+    BackgroundColorDisabled = #E6E6E6;
+    BackgroundColorHover = white;
+    BorderColor = #3C3C3C;
+    BorderColorDisabled = #7D7D7D;
+    BorderColorHover = black;
+    Borders = (1, 1, 1, 1);
+    CaretColor = black;
+    CaretWidth = 1;
+    DefaultTextColor = #A0A0A0;
+    Padding = (0, 0, 0, 0);
+    SelectedTextBackgroundColor = #006EFF;
+    SelectedTextColor = white;
+    TextColor = #3C3C3C;
+    TextColorDisabled = #7D7D7D;
+    Texture = None;
+    TextureDisabled = None;
+    TextureFocused = None;
+    TextureHover = None;
+}
+
+Panel.LoginPanel {
+    Position = (250, 50% - 150);
+    Size = (300, 274);
+
+    Renderer {
+        BackgroundColor = white;
+        BorderColor = black;
+        Borders = (1, 1, 1, 1);
+        Padding = (8, 8, 8, 8);
+        RoundedBorderRadius = 8;
+        TextureBackground = None;
+    }
+
+    VerticalLayout.VerticalLayout1 {
+        Ratios = [1, 1, 1, 1, 1, 1, 1, 1];
+        Size = (100%, 100%);
+
+        Renderer {
+        }
+
+        Label.Label1 {
+            HorizontalAlignment = Center;
+            Renderer = &1;
+            ScrollbarPolicy = Automatic;
+            Size = (282, 32);
+            Text = "Username (4~12 chars)";
+            TextSize = 13;
+            VerticalAlignment = Bottom;
+        }
+
+        EditBox.UsernameBox {
+            Alignment = Center;
+            DefaultText = user;
+            MaximumCharacters = 12;
+            Position = (0, 32);
+            Renderer = &2;
+            Size = (282, 32);
+            TextSize = 13;
+            TextWidthLimited = true;
+        }
+
+        Label.Label2 {
+            HorizontalAlignment = Center;
+            Position = (0, 64);
+            Renderer = &1;
+            ScrollbarPolicy = Automatic;
+            Size = (282, 32);
+            Text = "IP Address";
+            TextSize = 13;
+            VerticalAlignment = Bottom;
+        }
+
+        HorizontalLayout.HorizontalLayout1 {
+            Position = (0, 96);
+            Ratios = [1, 1, 1, 1, 1, 1, 1];
+            Size = (282, 32);
+
+            Renderer {
+            }
+
+            EditBox.IPBox1 {
+                Alignment = Center;
+                InputValidator = "[0-1]?[0-9]?[0-9]?|2[0-4][0-9]|25[0-5]";
+                MaximumCharacters = 3;
+                Renderer = &2;
+                Size = (40.2857, 32);
+                TextSize = 13;
+            }
+
+            Label.Label4 {
+                HorizontalAlignment = Center;
+                MaximumTextWidth = 5;
+                Position = (40.2857, 0);
+                Renderer = &1;
+                ScrollbarPolicy = Automatic;
+                Size = (40.2857, 32);
+                Text = ".";
+                TextSize = 13;
+                VerticalAlignment = Bottom;
+            }
+
+            EditBox.IPBox2 {
+                Alignment = Center;
+                InputValidator = "[0-1]?[0-9]?[0-9]?|2[0-4][0-9]|25[0-5]";
+                MaximumCharacters = 3;
+                Position = (80.5714, 0);
+                Renderer = &2;
+                Size = (40.2857, 32);
+                TextSize = 13;
+            }
+
+            Label.Label5 {
+                HorizontalAlignment = Center;
+                Position = (120.857, 0);
+                Renderer = &1;
+                ScrollbarPolicy = Automatic;
+                Size = (40.2857, 32);
+                Text = ".";
+                TextSize = 13;
+                VerticalAlignment = Bottom;
+            }
+
+            EditBox.IPBox3 {
+                Alignment = Center;
+                InputValidator = "[0-1]?[0-9]?[0-9]?|2[0-4][0-9]|25[0-5]";
+                MaximumCharacters = 3;
+                Position = (161.143, 0);
+                Renderer = &2;
+                Size = (40.2857, 32);
+                TextSize = 13;
+            }
+
+            Label.Label6 {
+                HorizontalAlignment = Center;
+                Position = (201.429, 0);
+                Renderer = &1;
+                ScrollbarPolicy = Automatic;
+                Size = (40.2857, 32);
+                Text = ".";
+                TextSize = 13;
+                VerticalAlignment = Bottom;
+            }
+
+            EditBox.IPBox4 {
+                Alignment = Center;
+                InputValidator = "[0-1]?[0-9]?[0-9]?|2[0-4][0-9]|25[0-5]";
+                MaximumCharacters = 3;
+                Position = (241.714, 0);
+                Renderer = &2;
+                Size = (40.2857, 32);
+                TextSize = 13;
+            }
+        }
+
+        Label.Label3 {
+            HorizontalAlignment = Center;
+            Position = (0, 128);
+            Renderer = &1;
+            ScrollbarPolicy = Automatic;
+            Size = (282, 32);
+            Text = Port;
+            TextSize = 13;
+            VerticalAlignment = Bottom;
+        }
+
+        EditBox.PortBox {
+            Alignment = Center;
+            InputValidator = "(6553[0-5]|655[0-2][0-9]|65[0-4][0-9]{2}|6[0-4][0-9]{3}|[1-5][0-9]{4}|[0-9]{1,4})";
+            MaximumCharacters = 5;
+            Position = (0, 160);
+            Renderer = &2;
+            Size = (282, 32);
+            TextSize = 13;
+        }
+
+        ClickableWidget.Padding {
+            Position = (0, 192);
+            Size = (282, 32);
+
+            Renderer {
+            }
+        }
+
+        Button.LoginButton {
+            Position = (0, 224);
+            Size = (282, 32);
+            Text = Join;
+            TextSize = 13;
+
+            Renderer {
+                BackgroundColor = #F5F5F5;
+                BackgroundColorDisabled = #E6E6E6;
+                BackgroundColorDown = #EBEBEB;
+                BackgroundColorHover = white;
+                BorderColor = #3C3C3C;
+                BorderColorDisabled = #7D7D7D;
+                BorderColorDown = black;
+                BorderColorFocused = #1E1EB4;
+                BorderColorHover = black;
+                Borders = (1, 1, 1, 1);
+                TextColor = #3C3C3C;
+                TextColorDisabled = #7D7D7D;
+                TextColorDown = black;
+                TextColorHover = black;
+                Texture = None;
+                TextureDisabled = None;
+                TextureDown = None;
+                TextureDownFocused = None;
+                TextureDownHover = None;
+                TextureFocused = None;
+                TextureHover = None;
+            }
+        }
+    }
+}

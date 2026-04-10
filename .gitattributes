@@ -1,1 +1,16 @@
 Data[[:space:]]Communication[[:space:]]&[[:space:]]Networking[[:space:]]A2 filter=lfs diff=lfs merge=lfs -text
+GAMESTATE.ipch filter=lfs diff=lfs merge=lfs -text
+MENUSTATE.pich filter=lfs diff=lfs merge=lfs -text
+PACKETHEADER.pich filter=lfs diff=lfs merge=lfs -text
+LATENCYSIMULATIONTRANSPORT.ipch filter=lfs diff=lfs merge=lfs -text
+NETWORKMANAGER.ipch filter=lfs diff=lfs merge=lfs -text
+NETWORKLOCATOR.ipch filter=lfs diff=lfs merge=lfs -text
+MAINSTATE.ipch filter=lfs diff=lfs merge=lfs -text
+PACKETHEADER.ipch filter=lfs diff=lfs merge=lfs -text
+SERVER.ipch filter=lfs diff=lfs merge=lfs -text
+MAIN.ipch filter=lfs diff=lfs merge=lfs -text
+TMPCCEC.TMP.ipch filter=lfs diff=lfs merge=lfs -text
+TMP6FD9.TMP.ipch filter=lfs diff=lfs merge=lfs -text
+SERVERLOCATOR.ipch filter=lfs diff=lfs merge=lfs -text
+TMP54EC.TMP.impch filter=lfs diff=lfs merge=lfs -text
+STATE.ipch filter=lfs diff=lfs merge=lfs -text

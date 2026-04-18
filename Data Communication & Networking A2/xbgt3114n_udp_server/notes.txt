@@ -1,1 +1,0 @@
-StateMachine and State classes are adapted from https://github.com/eXpl0it3r/SmallGameEngine/tree/master

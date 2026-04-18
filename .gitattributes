@@ -15,3 +15,4 @@ SERVERLOCATOR.ipch filter=lfs diff=lfs merge=lfs -text
 TMP54EC.TMP.impch filter=lfs diff=lfs merge=lfs -text
 STATE.ipch filter=lfs diff=lfs merge=lfs -text
 MENUSTATE.ipch filter=lfs diff=lfs merge=lfs -text
+STATEMACHINE.ipch filter=lfs diff=lfs merge=lfs -text

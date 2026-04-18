@@ -1,0 +1,18 @@
+﻿  main.cpp
+  MainState.cpp
+  PacketHeader.cpp
+  ServerLocator.cpp
+  Server.cpp
+C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\src\Server.cpp(205,20): warning C4834: discarding return value of function with [[nodiscard]] attribute
+  State.cpp
+  Generating Code...
+  xbgt3114n_udp_server.vcxproj -> C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\build\bin\xbgt3114n_udp_server_x64_debug.exe
+  C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\assets\form_timesync.txt
+  1 File(s) copied
+  C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\dll\x64\debug\sfml-audio-d-3.dll
+  C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\dll\x64\debug\sfml-graphics-d-3.dll
+  C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\dll\x64\debug\sfml-network-d-3.dll
+  C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\dll\x64\debug\sfml-system-d-3.dll
+  C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\dll\x64\debug\sfml-window-d-3.dll
+  C:\Users\0136896\Desktop\Programming Related\Data Communication & Networking A1\xbgt3114n_udp_server\dll\x64\debug\tgui-d.dll
+  6 File(s) copied

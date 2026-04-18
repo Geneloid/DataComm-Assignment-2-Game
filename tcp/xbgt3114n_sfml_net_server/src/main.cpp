@@ -8,6 +8,7 @@
 
 #include "PlayerConnection.h"
 #include "GameRoom.h"
+#include "PacketType.h"
 
 // countdown update helper for validation
 void updateRoomCountdowns(std::mt19937& gen)
@@ -41,53 +42,7 @@ void updateRoomCountdowns(std::mt19937& gen)
 /// if client send a packet with one of these types
 /// the server will know how to interpret the remaining data inside that packet
 
-// I moved my packettypes to shared file PacketType.h so both client and server can include and use the same enum values
-enum class PacketType : int
-{
-	HandShake = 0,
-	PlayerConnected = 1,
-	PlayerDisconnected = 2,
-	NameSet = 3,
-
-	// lobby-level communication
-	LobbyMessageSend = 4,
-	LobbyMessageReceive = 5,
-
-	// room management
-	CreateRoomRequest = 6,
-	CreateRoomResponse = 7,
-	JoinRoomRequest = 8,
-	JoinRoomResponse = 9,
-	LeaveRoomRequest = 10,
-	RoomListUpdate = 11,
-	RoomPlayerListUpdate = 12,
-
-	// room-level communication
-	RoomMessageSend = 13,
-	RoomMessageReceive = 14,
-	EmojiSend = 15,
-	EmojiReceive = 16,
-
-	// ready / token / setup
-	ReadyStateChange = 17,
-	ReadyStateUpdate = 18,
-	TokenChangeRequest = 19,
-	TokenChangeUpdate = 20,
-	SubmitSecretNumber = 21,
-
-	// game flow
-	GameStartCountdown = 22,
-	GameStart = 23,
-	SubmitGuess = 24,
-	GuessResult = 25,
-	TurnUpdate = 26,
-	MatchResult = 27,
-	SessionStatsUpdate = 28,
-
-	// optional error feedback
-	ErrorMessage = 29
-};
-
+// I moved my PacketTypes class to shared file PacketType.h so both client and server can include and use the same enum values
 
 // ============================
 // GLOBAL SERVER DATA

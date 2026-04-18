@@ -1,11 +1,12 @@
-﻿  main.cpp
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(15,20): error C2065: 'rooms': undeclared identifier
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(15,13): error C2530: 'room': references must be initialized
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(15,13): error C3531: 'room': a symbol whose type contains 'auto' must have an initializer
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(15,18): error C2143: syntax error: missing ';' before ':'
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(15,25): error C2143: syntax error: missing ';' before ')'
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(21,9): error C3861: 'allPlayersReadyAndChosenNumbers': identifier not found
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(25,5): error C3861: 'broadcastRoomSystemMessage': identifier not found
-C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(32,5): error C3861: 'startMatch': identifier not found
+﻿  GameRoom.cpp
+  main.cpp
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(16,20): error C2065: 'rooms': undeclared identifier
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(16,13): error C2530: 'room': references must be initialized
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(16,13): error C3531: 'room': a symbol whose type contains 'auto' must have an initializer
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(16,18): error C2143: syntax error: missing ';' before ':'
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(16,25): error C2143: syntax error: missing ';' before ')'
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(22,9): error C3861: 'allPlayersReadyAndChosenNumbers': identifier not found
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(26,5): error C3861: 'broadcastRoomSystemMessage': identifier not found
+C:\Users\0136896\Documents\GitHub\DataComm-Assignment-2-Game\tcp\xbgt3114n_sfml_net_server\src\main.cpp(33,5): error C3861: 'startMatch': identifier not found
   PlayerConnection.cpp
   Generating Code...

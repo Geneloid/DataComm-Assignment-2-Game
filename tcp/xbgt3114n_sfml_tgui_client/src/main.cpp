@@ -2,6 +2,8 @@
 #include "StateMachine.hpp"
 #include "MenuState.h"
 
+#include "PacketType.h"
+
 int main()
 {
 	NetworkManager netManager;

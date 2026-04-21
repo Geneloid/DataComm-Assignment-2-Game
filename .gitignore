@@ -1,0 +1,26 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio databases / caches
+*.VC.db
+*.VC.opendb
+*.ipch
+*.vsidx
+DocumentLayout.json
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Temp
+*.log
+*.tmp
+*.cache

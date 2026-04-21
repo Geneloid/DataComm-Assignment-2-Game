@@ -12,6 +12,10 @@ class GameplayState : public State
 	tgui::Label::Ptr turnLabel;
 	tgui::Label::Ptr resultLabel;
 
+	tgui::Label::Ptr mySecretLabel;
+	tgui::Label::Ptr myLatestGuessLabel;
+	tgui::ChatBox::Ptr myGuessHistoryBox;
+
 	tgui::EditBox::Ptr guessInput;
 	tgui::Button::Ptr sendGuessButton;
 

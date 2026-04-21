@@ -94,6 +94,32 @@ RoomState::RoomState(StateMachine& machine, sf::RenderWindow& window, bool repla
 	leaveRoomButton->setPosition("84%", "66%");
 	leaveRoomButton->onPress(&RoomState::leaveRoom, this);
 	gui.add(leaveRoomButton);
+
+	// simple emoji buttons for functional testing
+	// can include better UI and more emoji with art style
+	emojiButtonSmile = tgui::Button::create(":smile:");
+	emojiButtonSmile->setSize("10%", "6%");
+	emojiButtonSmile->setPosition("2%", "90%");
+	emojiButtonSmile->onPress([this]() { sendEmoji(":smile:"); });
+	gui.add(emojiButtonSmile);
+
+	emojiButtonThumbsUp = tgui::Button::create(":thumbsup:");
+	emojiButtonThumbsUp->setSize("12%", "6%");
+	emojiButtonThumbsUp->setPosition("13%", "90%");
+	emojiButtonThumbsUp->onPress([this]() { sendEmoji(":thumbsup:"); });
+	gui.add(emojiButtonThumbsUp);
+
+	emojiButtonAngry = tgui::Button::create(":angry:");
+	emojiButtonAngry->setSize("10%", "6%");
+	emojiButtonAngry->setPosition("26%", "90%");
+	emojiButtonAngry->onPress([this]() { sendEmoji(":angry:"); });
+	gui.add(emojiButtonAngry);
+
+	emojiButtonLaugh = tgui::Button::create(":laugh:");
+	emojiButtonLaugh->setSize("10%", "6%");
+	emojiButtonLaugh->setPosition("37%", "90%");
+	emojiButtonLaugh->onPress([this]() { sendEmoji(":laugh:"); });
+	gui.add(emojiButtonLaugh);
 }
 
 RoomState::~RoomState()
@@ -119,24 +145,68 @@ void RoomState::sendToken()
 {
 	auto text = tokenInput->getText().toStdString();
 	if (text.empty())
+	{
+		roomChatBox->addLine("[Error] Token cannot be empty");
 		return;
+	}
 
-	sf::Packet packet;
-	packet << (int)PacketType::TokenChangeRequest;
-	packet << std::stoi(text);
-	NetworkLocator::get().send(packet);
+	try
+	{
+		int token = std::stoi(text);
+
+		// Token isjust a logical selection id for room setup (can decorate player avatar or blabla in future)
+		// allowed range now kinda small for testing so it is easier to manage
+		if (token < 1 || token > 4)
+		{
+			roomChatBox->addLine("[Error] Token must be between 1 and 4.");
+			return;
+		}
+
+		sf::Packet packet;
+		packet << (int)PacketType::TokenChangeRequest;
+		packet << token;
+		NetworkLocator::get().send(packet);
+	}
+	catch (const std::exception&)
+	{
+		roomChatBox->addLine("[Error] Token must be a valid integer.");
+	}
 }
 
 void RoomState::sendSecretNumber()
 {
 	auto text = secretNumberInput->getText().toStdString();
 	if (text.empty())
+	{
+		roomChatBox->addLine("[Error] Secret number cannot be empty.");
 		return;
+	}
 
-	sf::Packet packet;
-	packet << (int)PacketType::SubmitSecretNumber;
-	packet << std::stoi(text);
-	NetworkLocator::get().send(packet);
+	try
+	{
+		int secretNumber = std::stoi(text);
+
+		// same range rule used by the server
+		if (secretNumber < 1 || secretNumber > 100)
+		{
+			roomChatBox->addLine("[Error] Secret number must be between 1 and 100.");
+			return;
+		}
+
+		sf::Packet packet;
+		packet << (int)PacketType::SubmitSecretNumber;
+		packet << secretNumber;
+		NetworkLocator::get().send(packet);
+
+		// keep my own secret locally so GameplayState can display
+		NetworkLocator::get().setMySecretNumber(secretNumber);
+
+		roomChatBox->addLine("[System] My secret number is set to " + std::to_string(secretNumber) + ".");
+	}
+	catch (const std::exception&)
+	{
+		roomChatBox->addLine("[Error] Secret number must be a valid integer.");
+	}
 }
 
 void RoomState::sendReady(bool readyValue)
@@ -155,6 +225,17 @@ void RoomState::leaveRoom()
 
 	// directly return to LobbyState locally (room leave logic)
 	this->m_next = StateMachine::build<LobbyState>(m_machine, m_window, true);
+}
+
+void RoomState::sendEmoji(const std::string& emojiText)
+{
+	if (emojiText.empty())
+		return;
+
+	sf::Packet packet;
+	packet << (int)PacketType::EmojiSend;
+	packet << emojiText;
+	NetworkLocator::get().send(packet);
 }
 
 void RoomState::handlePacket(sf::Packet& packet)
@@ -220,7 +301,7 @@ void RoomState::handlePacket(sf::Packet& packet)
 		std::string emojiText;
 		packet >> senderId >> emojiText;
 
-		roomChatBox->addLine("[Emoji] " + emojiText);
+		roomChatBox->addLine("[Emoji from Player " + std::to_string(senderId) + "] " + emojiText);
 	}
 	else if (type == (int)PacketType::GameStartCountdown)
 	{

@@ -752,6 +752,11 @@ void handleGuess(PlayerConnection* player, GameRoom* room, int guessedNumber)
 
 	int opponentSecret = opponent->getSecretNumber();
 
+	std::cout << "[Guess Debug] "
+		<< player->getName() << " guessed " << guessedNumber
+		<< " against " << opponent->getName()
+		<< "'s secret number " << opponentSecret << std::endl;
+
 	std::string resultText;
 	bool correct = false;
 
@@ -1255,6 +1260,12 @@ int main()
 								else
 								{
 									player->setSecretNumber(secretNumber);
+
+									std::cout << "[Secret Debug] "
+										<< player->getName()
+										<< " set secret number to "
+										<< secretNumber << std::endl;
+
 									tryStartMatchIfReady(room, gen);
 								}
 							}

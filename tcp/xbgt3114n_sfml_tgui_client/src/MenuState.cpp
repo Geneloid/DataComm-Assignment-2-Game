@@ -76,15 +76,48 @@ void MenuState::onLoginPress()
 	// if connection fail can re-show it later from error handling
 	panel->setVisible(false);
 
-	sf::IpAddress ip(std::stoi(ipBox1->getText().toStdString()),
-		std::stoi(ipBox2->getText().toStdString()),
-		std::stoi(ipBox3->getText().toStdString()),
-		std::stoi(ipBox4->getText().toStdString()));
-
-	if (NetworkLocator::get().connect(ip,
-		std::stoi(portBox->getText().toStdString())))
+	try
 	{
-		std::cout << "Connected to " << ip << ":" << portBox->getText() << std::endl;
+		int ip1 = std::stoi(ipBox1->getText().toStdString());
+		int ip2 = std::stoi(ipBox2->getText().toStdString());
+		int ip3 = std::stoi(ipBox3->getText().toStdString());
+		int ip4 = std::stoi(ipBox4->getText().toStdString());
+		int port = std::stoi(portBox->getText().toStdString());
+
+		// basic validation so clearly invalid numbers are blocked early
+		if (ip1 < 0 || ip1 > 255 ||
+			ip2 < 0 || ip2 > 255 ||
+			ip3 < 0 || ip3 > 255 ||
+			ip4 < 0 || ip4 > 255)
+		{
+			std::cout << "[Menu Error] IP address sections must be between 0 and 255." << std::endl;
+			panel->setVisible(true);
+			return;
+		}
+
+		if (port <= 0 || port > 65535)
+		{
+			std::cout << "[Menu Error] Port must be between 1 and 65535." << std::endl;
+			panel->setVisible(true);
+			return;
+		}
+
+		sf::IpAddress ip(ip1, ip2, ip3, ip4);
+
+		if (NetworkLocator::get().connect(ip, static_cast<unsigned short>(port)))
+		{
+			std::cout << "Connected to " << ip << ":" << port << std::endl;
+		}
+		else
+		{
+			std::cout << "[Menu Error] Failed to connect to server." << std::endl;
+			panel->setVisible(true);
+		}
+	}
+	catch (const std::exception&)
+	{
+		std::cout << "[Menu Error] IP and port must be valid integers." << std::endl;
+		panel->setVisible(true);
 	}
 
 	// connect() only means TCP connection succeed
@@ -131,6 +164,10 @@ void MenuState::handlePacket(sf::Packet& packet)
 		packet >> playerId >> playerName;
 
 		std::cout << "Server accepted player " << playerName << " with id " << playerId << std::endl;
+
+		// store this local client is so later states can identify
+		// my own packets, my own guesses, and my own UI section
+		NetworkLocator::get().setLocalPlayerInfo(playerId, playerName);
 
 		this->m_next = StateMachine::build<LobbyState>(m_machine, m_window, true);
 	}

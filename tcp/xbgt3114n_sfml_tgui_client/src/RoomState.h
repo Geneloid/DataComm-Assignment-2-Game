@@ -29,6 +29,13 @@ class RoomState : public State
 	tgui::Button::Ptr notReadyButton;
 	tgui::Button::Ptr leaveRoomButton;
 
+	tgui::Button::Ptr emojiButtonSmile;
+	tgui::Button::Ptr emojiButtonThumbsUp;
+	tgui::Button::Ptr emojiButtonAngry;
+	tgui::Button::Ptr emojiButtonLaugh;
+
+	void sendEmoji(const std::string& emojiText);
+
 	size_t receiveHandle = 0;
 
 	// handle all room related packets

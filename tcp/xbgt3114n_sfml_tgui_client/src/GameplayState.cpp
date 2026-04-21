@@ -20,6 +20,20 @@ GameplayState::GameplayState(StateMachine& machine, sf::RenderWindow& window, bo
 	resultLabel->setPosition("2%", "12%");
 	gui.add(resultLabel);
 
+	// personal tracking section
+	mySecretLabel = tgui::Label::create("My Secret Number: ?");
+	mySecretLabel->setPosition("52%", "2%");
+	gui.add(mySecretLabel);
+
+	myLatestGuessLabel = tgui::Label::create("My Latest Guess: none");
+	myLatestGuessLabel->setPosition("52%", "7%");
+	gui.add(myLatestGuessLabel);
+
+	myGuessHistoryBox = tgui::ChatBox::create();
+	myGuessHistoryBox->setSize("45%", "18%");
+	myGuessHistoryBox->setPosition("52%", "12%");
+	gui.add(myGuessHistoryBox);
+
 	guessInput = tgui::EditBox::create();
 	guessInput->setSize("20%", "6%");
 	guessInput->setPosition("2%", "20%");
@@ -39,7 +53,7 @@ GameplayState::GameplayState(StateMachine& machine, sf::RenderWindow& window, bo
 
 	lobbyChatBox = tgui::ChatBox::create();
 	lobbyChatBox->setSize("45%", "20%");
-	lobbyChatBox->setPosition("52%", "30%");
+	lobbyChatBox->setPosition("52%", "35%");
 	gui.add(lobbyChatBox);
 }
 
@@ -52,14 +66,34 @@ void GameplayState::sendGuess()
 {
 	auto text = guessInput->getText().toStdString();
 	if (text.empty())
+	{
+		gameLogBox->addLine("[Error] Guess cannot be empty");
 		return;
+	}
 
-	sf::Packet packet;
-	packet << (int)PacketType::SubmitGuess;
-	packet << std::stoi(text);
-	NetworkLocator::get().send(packet);
+	try
+	{
+		int guess = std::stoi(text);
 
-	guessInput->setText("");
+		// match same valid range used by the server
+		if (guess < 1 || guess > 100)
+		{
+			gameLogBox->addLine("[Error] Guess must be between 1 and 100.");
+			return;
+		}
+
+		sf::Packet packet;
+		packet << (int)PacketType::SubmitGuess;
+		packet << guess;
+		NetworkLocator::get().send(packet);
+
+		guessInput->setText("");
+	}
+	catch (const std::exception&)
+	{
+		// if user types invalid integer text
+		gameLogBox->addLine("[Error] Guess must be a valid integer.");
+	}
 }
 
 void GameplayState::handlePacket(sf::Packet& packet)
@@ -89,6 +123,16 @@ void GameplayState::handlePacket(sf::Packet& packet)
 
 		resultLabel->setText("Guess " + std::to_string(guessedNumber) + ": " + resultText);
 		gameLogBox->addLine("Player " + std::to_string(guesserPlayerId) + " guessed " + std::to_string(guessedNumber) + " -> " + resultText);
+
+		// only record private guess history if this GuessResult belongs to me
+		if (guesserPlayerId == NetworkLocator::get().getLocalPlayerId())
+		{
+			std::string entry = std::to_string(guessedNumber) + " -> " + resultText;
+
+			myLatestGuessLabel->setText("My Latest Guess: " + entry);
+			myGuessHistoryBox->addLine(entry);
+			NetworkLocator::get().addMyGuessHistory(entry);
+		}
 	}
 	else if (type == (int)PacketType::MatchResult)
 	{
@@ -100,6 +144,10 @@ void GameplayState::handlePacket(sf::Packet& packet)
 		packet >> roomId >> winnerPlayerId >> loserPlayerId >> resultMessage;
 
 		gameLogBox->addLine("[Match Result] " + resultMessage);
+
+		// refresh on next startup rouhnd
+		NetworkLocator::get().clearMyGuessHistory();
+		NetworkLocator::get().clearMySecretNumber();
 
 		// after match ends return to room state for next round
 		this->m_next = StateMachine::build<RoomState>(m_machine, m_window, true);
@@ -135,6 +183,24 @@ void GameplayState::handlePacket(sf::Packet& packet)
 
 void GameplayState::activate()
 {
+	// if GameplayState opens will then refresh my own secret number display
+	// from the locally stored session data
+	int mySecret = NetworkLocator::get().getMySecretNumber();
+	if (mySecret >= 0)
+	{
+		mySecretLabel->setText("My Secret Number: " + std::to_string(mySecret));
+	}
+	else
+	{
+		mySecretLabel->setText("My Secret Number: ?");
+	}
+
+	myGuessHistoryBox->removeAllLines();
+	for (const auto& entry : NetworkLocator::get().getMyGuessHistory())
+	{
+		myGuessHistoryBox->addLine(entry);
+	}
+
 	receiveHandle = NetworkLocator::get().subscribe([&](sf::Packet packet)
 		{
 			handlePacket(packet);

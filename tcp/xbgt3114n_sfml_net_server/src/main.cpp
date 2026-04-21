@@ -10,32 +10,6 @@
 #include "GameRoom.h"
 #include "PacketType.h"
 
-// countdown update helper for validation
-void updateRoomCountdowns(std::mt19937& gen)
-{
-	for (auto& room : rooms)
-	{
-		if (room.getState() == RoomState::CountdownStarting && room.isCountdownActive())
-		{
-			// if any player unready / leave / clears number during countdown
-			// cancel the countdown safely
-			if (!allPlayersReadyAndChosenNumbers(&room))
-			{
-				room.clearCountdown();
-				room.setState(RoomState::WaitingReady);
-				broadcastRoomSystemMessage(&room, "Countdown cancelled.");
-				continue;
-			}
-
-			if (room.hasCountdownFinished())
-			{
-				room.clearCountdown();
-				startMatch(&room, gen);
-			}
-		}
-	}
-}
-
 /// SUMMARY
 /// PacketType used between client and server
 /// both client and server need agree on these values
@@ -502,6 +476,32 @@ void tryStartMatchIfReady(GameRoom* room, std::mt19937& gen)
 	sendPacketToRoom(countdownPacket, room);
 
 	broadcastRoomSystemMessage(room, "All players ready. Starting in 3 seconds...");
+}
+
+// countdown update helper for validation
+void updateRoomCountdowns(std::mt19937& gen)
+{
+	for (auto& room : rooms)
+	{
+		if (room.getState() == RoomState::CountdownStarting && room.isCountdownActive())
+		{
+			// if any player unready / leave / clears number during countdown
+			// cancel the countdown safely
+			if (!allPlayersReadyAndChosenNumbers(&room))
+			{
+				room.clearCountdown();
+				room.setState(RoomState::WaitingReady);
+				broadcastRoomSystemMessage(&room, "Countdown cancelled.");
+				continue;
+			}
+
+			if (room.hasCountdownFinished())
+			{
+				room.clearCountdown();
+				startMatch(&room, gen);
+			}
+		}
+	}
 }
 
 // ============================

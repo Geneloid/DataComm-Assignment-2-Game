@@ -1,61 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\",
+  "WorkspaceRootPath": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\GameState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\0136896\\Desktop\\Current Programming Related\\DATA COMMUNICATION\\Data Comm A3 - Local\\tcp\\xbgt3114n_sfml_tgui_client\\src\\PacketType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\StateMachine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\StateMachine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\StateMachine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\StateMachine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\State.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\State.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\State.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\NetworkManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkLocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\NetworkLocator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\NetworkManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkLocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\NetworkLocator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\MenuState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\MenuState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\MenuState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\MenuState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\GameState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\GameState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameplayState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\GameplayState.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameplayState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_tgui_client.vcxproj|solutionrelative:src\\GameplayState.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,177 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StateMachine.hpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\StateMachine.hpp",
-              "RelativeDocumentMoniker": "src\\StateMachine.hpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\StateMachine.hpp",
-              "RelativeToolTip": "src\\StateMachine.hpp",
-              "ViewState": "AgIAABAAAAAAAAAAAAAUwDwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:09:37.951Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "State.cpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\State.cpp",
-              "RelativeDocumentMoniker": "src\\State.cpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\State.cpp",
-              "RelativeToolTip": "src\\State.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T10:09:32.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "State.hpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\State.hpp",
-              "RelativeDocumentMoniker": "src\\State.hpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\State.hpp",
-              "RelativeToolTip": "src\\State.hpp",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwC8AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:09:23.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NetworkManager.h",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkManager.h",
-              "RelativeDocumentMoniker": "src\\NetworkManager.h",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkManager.h",
-              "RelativeToolTip": "src\\NetworkManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:08:48.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NetworkLocator.h",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkLocator.h",
-              "RelativeDocumentMoniker": "src\\NetworkLocator.h",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkLocator.h",
-              "RelativeToolTip": "src\\NetworkLocator.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:08:32.124Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MenuState.h",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\MenuState.h",
-              "RelativeDocumentMoniker": "src\\MenuState.h",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\MenuState.h",
-              "RelativeToolTip": "src\\MenuState.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:08:16.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "GameState.cpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.cpp",
-              "RelativeDocumentMoniker": "src\\GameState.cpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.cpp",
-              "RelativeToolTip": "src\\GameState.cpp",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwEcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T10:07:56.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GameState.h",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.h",
-              "RelativeDocumentMoniker": "src\\GameState.h",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.h",
-              "RelativeToolTip": "src\\GameState.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:07:55.134Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\main.cpp",
-              "RelativeDocumentMoniker": "src\\main.cpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\main.cpp",
-              "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
+              "Title": "GameState.cpp",
+              "DocumentMoniker": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.cpp",
+              "RelativeDocumentMoniker": "src\\GameState.cpp",
+              "ToolTip": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.cpp",
+              "RelativeToolTip": "src\\GameState.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T09:52:44.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MenuState.cpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\MenuState.cpp",
-              "RelativeDocumentMoniker": "src\\MenuState.cpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\MenuState.cpp",
-              "RelativeToolTip": "src\\MenuState.cpp",
-              "ViewState": "AgIAADkAAAAAAAAAAAAwwGcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T09:52:42.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NetworkLocator.cpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkLocator.cpp",
-              "RelativeDocumentMoniker": "src\\NetworkLocator.cpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkLocator.cpp",
-              "RelativeToolTip": "src\\NetworkLocator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T09:52:41.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NetworkManager.cpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkManager.cpp",
-              "RelativeDocumentMoniker": "src\\NetworkManager.cpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\NetworkManager.cpp",
-              "RelativeToolTip": "src\\NetworkManager.cpp",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwE0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T09:52:41.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StateMachine.cpp",
-              "DocumentMoniker": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\StateMachine.cpp",
-              "RelativeDocumentMoniker": "src\\StateMachine.cpp",
-              "ToolTip": "C:\\Users\\0136896\\Documents\\GitHub\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\StateMachine.cpp",
-              "RelativeToolTip": "src\\StateMachine.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T09:52:40.439Z",
+              "WhenOpened": "2026-04-21T09:47:52.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PacketType.h",
-              "DocumentMoniker": "C:\\Users\\0136896\\Desktop\\Current Programming Related\\DATA COMMUNICATION\\Data Comm A3 - Local\\tcp\\xbgt3114n_sfml_tgui_client\\src\\PacketType.h",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Desktop\\Current Programming Related\\DATA COMMUNICATION\\Data Comm A3 - Local\\tcp\\xbgt3114n_sfml_tgui_client\\src\\PacketType.h",
-              "ToolTip": "C:\\Users\\0136896\\Desktop\\Current Programming Related\\DATA COMMUNICATION\\Data Comm A3 - Local\\tcp\\xbgt3114n_sfml_tgui_client\\src\\PacketType.h",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Desktop\\Current Programming Related\\DATA COMMUNICATION\\Data Comm A3 - Local\\tcp\\xbgt3114n_sfml_tgui_client\\src\\PacketType.h",
+              "Title": "GameState.h",
+              "DocumentMoniker": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.h",
+              "RelativeDocumentMoniker": "src\\GameState.h",
+              "ToolTip": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameState.h",
+              "RelativeToolTip": "src\\GameState.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T09:52:36.288Z",
+              "WhenOpened": "2026-04-21T09:47:50.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameplayState.cpp",
+              "DocumentMoniker": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameplayState.cpp",
+              "RelativeDocumentMoniker": "src\\GameplayState.cpp",
+              "ToolTip": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameplayState.cpp",
+              "RelativeToolTip": "src\\GameplayState.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-21T09:47:50.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameplayState.h",
+              "DocumentMoniker": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameplayState.h",
+              "RelativeDocumentMoniker": "src\\GameplayState.h",
+              "ToolTip": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_tgui_client\\src\\GameplayState.h",
+              "RelativeToolTip": "src\\GameplayState.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-21T09:47:47.303Z",
               "EditorCaption": ""
             }
           ]

@@ -1,26 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\",
+  "WorkspaceRootPath": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\GameRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|solutionrelative:src\\GameRoom.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\PlayerConnection.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|solutionrelative:src\\PlayerConnection.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\PlayerConnection.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|solutionrelative:src\\PlayerConnection.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\GameRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{6B5CB378-D69C-468C-B143-0D7B124D54D1}|src\\xbgt3114n_sfml_net.vcxproj|solutionrelative:src\\GameRoom.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerConnection.cpp",
-              "DocumentMoniker": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\PlayerConnection.cpp",
-              "RelativeDocumentMoniker": "src\\PlayerConnection.cpp",
-              "ToolTip": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\PlayerConnection.cpp",
-              "RelativeToolTip": "src\\PlayerConnection.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T09:53:21.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GameRoom.cpp",
-              "DocumentMoniker": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\GameRoom.cpp",
-              "RelativeDocumentMoniker": "src\\GameRoom.cpp",
-              "ToolTip": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\GameRoom.cpp",
-              "RelativeToolTip": "src\\GameRoom.cpp",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T10:42:46.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.cpp",
-              "DocumentMoniker": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\main.cpp",
-              "RelativeDocumentMoniker": "src\\main.cpp",
-              "ToolTip": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\main.cpp",
-              "RelativeToolTip": "src\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-18T09:53:14.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerConnection.h",
-              "DocumentMoniker": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\PlayerConnection.h",
-              "RelativeDocumentMoniker": "src\\PlayerConnection.h",
-              "ToolTip": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\PlayerConnection.h",
-              "RelativeToolTip": "src\\PlayerConnection.h",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:03:27.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GameRoom.h",
-              "DocumentMoniker": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\GameRoom.h",
-              "RelativeDocumentMoniker": "src\\GameRoom.h",
-              "ToolTip": "U:\\sem8\\DC\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\GameRoom.h",
-              "RelativeToolTip": "src\\GameRoom.h",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-18T10:42:34.271Z",
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "C:\\Users\\0136896\\DataComm-Assignment-2-Game\\tcp\\xbgt3114n_sfml_net_server\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AgIAAAYFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-21T09:48:29.911Z",
               "EditorCaption": ""
             }
           ]

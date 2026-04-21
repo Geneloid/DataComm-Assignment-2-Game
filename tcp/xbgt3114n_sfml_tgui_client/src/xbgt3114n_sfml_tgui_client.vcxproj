@@ -150,19 +150,25 @@ xcopy.exe /D /Y "$(SolutionDir)dll\$(Platform)\$(Configuration.ToLower())\*.*" "
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameplayState.cpp" />
     <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="LobbyState.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="NetworkLocator.cpp" />
     <ClCompile Include="NetworkManager.cpp" />
+    <ClCompile Include="RoomState.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameplayState.h" />
     <ClInclude Include="GameState.h" />
+    <ClInclude Include="LobbyState.h" />
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="NetworkLocator.h" />
     <ClInclude Include="NetworkManager.h" />
+    <ClInclude Include="RoomState.h" />
     <ClInclude Include="State.hpp" />
     <ClInclude Include="StateMachine.hpp" />
   </ItemGroup>

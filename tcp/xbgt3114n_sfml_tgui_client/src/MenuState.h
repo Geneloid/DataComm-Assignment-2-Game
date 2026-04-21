@@ -21,11 +21,13 @@ class MenuState : public State
 
 	tgui::Button::Ptr loginButton;
 
+	// receiveHandle to keep track of my packet subscription id
 	size_t receiveHandle;
 
+	// validate input fields every time user changes text
 	void onInputBoxChanged();
-	void onLoginPress();
-	void handlePacket(sf::Packet& packet);
+	void onLoginPress(); // connect to the server using the typed IP and port
+	void handlePacket(sf::Packet& packet); // process packets that arrive while MenuState is active
 
 public:
 

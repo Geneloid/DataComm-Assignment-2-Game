@@ -16,3 +16,6 @@ TMP54EC.TMP.impch filter=lfs diff=lfs merge=lfs -text
 STATE.ipch filter=lfs diff=lfs merge=lfs -text
 MENUSTATE.ipch filter=lfs diff=lfs merge=lfs -text
 STATEMACHINE.ipch filter=lfs diff=lfs merge=lfs -text
+GAMEPLAYSTATE.ipch filter=lfs diff=lfs merge=lfs -text
+ROOMSTATE.ipch filter=lfs diff=lfs merge=lfs -text
+LOBBYSTATE.ipch filter=lfs diff=lfs merge=lfs -text
